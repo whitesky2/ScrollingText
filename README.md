@@ -5,6 +5,8 @@
 [![License](https://img.shields.io/cocoapods/l/ScrollingText.svg?style=flat)](https://cocoapods.org/pods/ScrollingText)
 [![Platform](https://img.shields.io/cocoapods/p/ScrollingText.svg?style=flat)](https://cocoapods.org/pods/ScrollingText)
 
+ScrollingText is custom view that text inside view move endless.
+
 ## Example
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.

@@ -13,13 +13,13 @@
 
 /* Begin PBXFileReference section */
 		093654B35DB9D49AC3D27401 /* Pods-ScrollingText_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ScrollingText_Tests.debug.xcconfig"; path = "Target Support Files/Pods-ScrollingText_Tests/Pods-ScrollingText_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		4E565F8ED8660231316C8A35 /* ScrollingText.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = ScrollingText.podspec; path = ../ScrollingText.podspec; sourceTree = "<group>"; };
+		4E565F8ED8660231316C8A35 /* ScrollingText.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = ScrollingText.podspec; path = ../ScrollingText.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		607FACE51AFB9204008FA782 /* ScrollingText_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ScrollingText_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
 		67721C3E523B8BAF9835B2B2 /* Pods_ScrollingText_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ScrollingText_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		878B19EF5257F1C1F0EA7A4D /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
-		A35145FC9D60384993F70E25 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		878B19EF5257F1C1F0EA7A4D /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		A35145FC9D60384993F70E25 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		C4A59CB6BD800FE0EFF3F683 /* Pods-ScrollingText_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ScrollingText_Tests.release.xcconfig"; path = "Target Support Files/Pods-ScrollingText_Tests/Pods-ScrollingText_Tests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -87,7 +87,6 @@
 				093654B35DB9D49AC3D27401 /* Pods-ScrollingText_Tests.debug.xcconfig */,
 				C4A59CB6BD800FE0EFF3F683 /* Pods-ScrollingText_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -131,12 +130,9 @@
 				LastUpgradeCheck = 0830;
 				ORGANIZATIONNAME = CocoaPods;
 				TargetAttributes = {
-					607FACCF1AFB9204008FA782 = {
-						CreatedOnToolsVersion = 6.3.1;
-						LastSwiftMigration = 0900;
-					};
 					607FACE41AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
+						DevelopmentTeam = Q2TQJD2Q9S;
 						LastSwiftMigration = 0900;
 						TestTargetID = 607FACCF1AFB9204008FA782;
 					};
@@ -147,6 +143,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -328,6 +325,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 093654B35DB9D49AC3D27401 /* Pods-ScrollingText_Tests.debug.xcconfig */;
 			buildSettings = {
+				DEVELOPMENT_TEAM = Q2TQJD2Q9S;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -350,6 +348,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = C4A59CB6BD800FE0EFF3F683 /* Pods-ScrollingText_Tests.release.xcconfig */;
 			buildSettings = {
+				DEVELOPMENT_TEAM = Q2TQJD2Q9S;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
 					"$(inherited)",
