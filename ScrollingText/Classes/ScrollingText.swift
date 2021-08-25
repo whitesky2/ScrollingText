@@ -41,7 +41,7 @@ public class ScrollingText: UIView {
         self.timer = nil
         
         self.setup()
-        self.layoutIfNeeded()
+        self.setNeedsDisplay()
     }
     
     @objc private func moveText() {
@@ -58,6 +58,6 @@ public class ScrollingText: UIView {
                 self.pos.x = 0
             }
         }
-        self.layoutIfNeeded()
+        self.setNeedsDisplay()
     }
 }
