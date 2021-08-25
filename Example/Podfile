@@ -1,0 +1,6 @@
+use_frameworks!
+target 'ScrollingText_Tests' do
+  pod 'ScrollingText', :path => '../'
+  
+  
+end
