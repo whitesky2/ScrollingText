@@ -20,11 +20,6 @@ public class ScrollingText: UIView {
     }
     
     private func setup() {
-        let label = UILabel()
-        label.text = self.text
-        label.sizeToFit()
-        
-        textWidth = label.bounds.width
         self.pos = CGPoint(x: 0, y: self.bounds.height / 2.0)
     }
     
@@ -33,7 +28,13 @@ public class ScrollingText: UIView {
     }
     
     public func startMove() {
-        self.timer = Timer(timeInterval: 0.1, target: self, selector: #selector(self.moveText), userInfo: nil, repeats: true)
+        let label = UILabel()
+        label.text = self.text
+        label.sizeToFit()
+        
+        textWidth = label.bounds.width
+        
+        self.timer = Timer.scheduledTimer(timeInterval: 0.1, target: self, selector: #selector(moveText), userInfo: nil, repeats: true)
     }
     
     public func stopMove() {
@@ -55,9 +56,11 @@ public class ScrollingText: UIView {
             self.pos.x += 3
             
             if self.pos.x > self.bounds.width {
-                self.pos.x = 0
+                print(-self.textWidth)
+                self.pos.x = -self.textWidth
             }
         }
+        
         self.setNeedsDisplay()
     }
 }
